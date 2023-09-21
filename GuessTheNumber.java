@@ -1,3 +1,5 @@
+//Hii this a small java game program made by me - "Shubham Kumar", hope you like it..
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -9,7 +11,7 @@ public class GuessTheNumber {
         int upperBound = 100;
         int generatedNumber = random.nextInt(upperBound - lowerBound + 1) + lowerBound;
         int attempts = 0;
-        int maxAttempts = 10; // You can set a limit on the number of attempts
+        int maxAttempts = 10;
         int score = 0;
 
         System.out.println("Welcome to the Guess the Number game!");
@@ -23,7 +25,7 @@ public class GuessTheNumber {
 
             if (userGuess == generatedNumber) {
                 System.out.println("Congratulations! You've guessed the number in " + attempts + " attempts.");
-                score += (maxAttempts - attempts) * 10; // You can assign points based on the number of attempts
+                score += (maxAttempts - attempts) * 10;
                 break;
             } else if (userGuess < generatedNumber) {
                 System.out.println("Try a higher number.");
